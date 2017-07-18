@@ -1,0 +1,9 @@
+<% @questions.each do |question| %>
+	<h2><%= question.title %></h2>
+	<div class="question-details">
+		Asked by - <%= question.asker.username %>
+	</div>
+	<br>
+	<%= question.body %>
+
+<% end %>
